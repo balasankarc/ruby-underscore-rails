@@ -1,0 +1,22 @@
+Source: ruby-underscore-rails
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Balasankar C <balasankarc@autistici.org>
+Build-Depends: debhelper (>= 7.0.50~),
+               gem2deb
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-underscore-rails.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-underscore-rails.git
+Homepage: https://github.com/rweng/underscore-rails
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-underscore-rails
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: underscore.js asset pipeline provider/wrapper
+ <insert long description, indented with spaces>

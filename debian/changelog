@@ -1,0 +1,5 @@
+ruby-underscore-rails (1.8.2+dfsg-1) UNRELEASED; urgency=medium
+
+  * Initial release (Closes: #790714)
+
+ -- Balasankar C <balasankarc@autistici.org>  Wed, 01 Jul 2015 19:49:41 +0530
