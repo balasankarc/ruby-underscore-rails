@@ -1,0 +1,10 @@
+--- a/lib/underscore-rails.rb
++++ b/lib/underscore-rails.rb
+@@ -4,6 +4,7 @@
+   module Rails
+     if defined?(::Rails) and Gem::Requirement.new('>= 3.1').satisfied_by?(Gem::Version.new ::Rails.version)
+       class Rails::Engine < ::Rails::Engine
++        config.root = '/usr/share/ruby-underscore-rails'
+         # this class enables the asset pipeline
+       end
+     end
