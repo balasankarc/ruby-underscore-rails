@@ -3,20 +3,21 @@ Section: ruby
 Priority: optional
 Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
 Uploaders: Balasankar C <balasankarc@autistici.org>
-Build-Depends: debhelper (>= 7.0.50~),
-               gem2deb
+Build-Depends: debhelper (>= 7.0.50~), gem2deb, libjs-underscore
 Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-underscore-rails.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-underscore-rails.git
 Homepage: https://github.com/rweng/underscore-rails
-Testsuite: autopkgtest-pkg-ruby
 XS-Ruby-Versions: all
 
 Package: ruby-underscore-rails
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ruby | ruby-interpreter,
+Depends: libjs-underscore,
+         ruby | ruby-interpreter,
          ${misc:Depends},
          ${shlibs:Depends}
-Description: underscore.js asset pipeline provider/wrapper
- <insert long description, indented with spaces>
+Description: library to use underscore.js with Rails
+ This gem provides underscore.js plugin to be used with Rails application.
+ Underscore is a JavaScript library that provides a whole mess of useful
+ functional programming helpers without extending any built-in objects.
